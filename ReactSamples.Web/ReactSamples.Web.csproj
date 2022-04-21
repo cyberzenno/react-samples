@@ -82,6 +82,14 @@
     <Content Include="app_1\src\components\SeeTheDetails\SeeTheDetailsContainer.js" />
     <Content Include="app_1\src\components\SeeTheList\SeeTheListContainer.js" />
     <Content Include="app_1\src\index.js" />
+    <Content Include="app_2\public\favicon.ico" />
+    <Content Include="app_2\public\index.html" />
+    <Content Include="app_2\public\logo192.png" />
+    <Content Include="app_2\public\logo512.png" />
+    <Content Include="app_2\public\robots.txt" />
+    <Content Include="app_2\src\App.css" />
+    <Content Include="app_2\src\App.js" />
+    <Content Include="app_2\src\index.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -93,6 +101,7 @@
     <Content Include="app_1\package.json" />
     <Content Include="app_1\public\manifest.json" />
     <Content Include="app_1\README.md" />
+    <Content Include="app_2\public\manifest.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\React.pubxml" />
     <None Include="Web.Debug.config">
@@ -104,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app_1\build\" />
+    <Folder Include="app_2\build\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
