@@ -73,10 +73,10 @@ function BubblesContainer() {
         </div>
 
         <div>
-            <div className="ac_18075_2900 ac_18075_7267 pos_18075_0906" onClick={() => dispatch({ type: 'inc_blue' })}></div>
-            <div className="ac_18075_7267 ac_18075_9605 pos_18075_0909" onClick={() => dispatch({ type: 'inc_green' })}></div>
-            <div className="ac_18075_7267 ac_18075_6556 pos_18075_0918" onClick={() => dispatch({ type: 'inc_orange' })}></div>
-            <div className="ac_18075_7267 ac_18075_5389 pos_18075_0923" onClick={() => dispatch({ type: 'inc_red' })}></div>
+            <div className="ac_18075_2900 ac_18075_7267 pos_18075_0906" onMouseDown={() => dispatch({ type: 'inc_blue' })}></div>
+            <div className="ac_18075_7267 ac_18075_9605 pos_18075_0909" onMouseDown={() => dispatch({ type: 'inc_green' })}></div>
+            <div className="ac_18075_7267 ac_18075_6556 pos_18075_0918" onMouseDown={() => dispatch({ type: 'inc_orange' })}></div>
+            <div className="ac_18075_7267 ac_18075_5389 pos_18075_0923" onMouseDown={() => dispatch({ type: 'inc_red' })}></div>
         </div>
 
         <div className="pos_18075_0969">
