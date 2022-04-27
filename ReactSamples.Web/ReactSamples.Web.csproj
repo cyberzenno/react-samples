@@ -89,7 +89,19 @@
     <Content Include="app_2\public\robots.txt" />
     <Content Include="app_2\src\App.css" />
     <Content Include="app_2\src\App.js" />
+    <Content Include="app_2\src\components\BubblesContainer.js" />
     <Content Include="app_2\src\index.js" />
+    <Content Include="app_2\src\components\PopModal.js" />
+    <Content Include="app_3\public\favicon.ico" />
+    <Content Include="app_3\public\index.html" />
+    <Content Include="app_3\public\logo192.png" />
+    <Content Include="app_3\public\logo512.png" />
+    <Content Include="app_3\public\robots.txt" />
+    <Content Include="app_3\src\App.css" />
+    <Content Include="app_3\src\App.js" />
+    <Content Include="app_3\src\components\BreedDetails.js" />
+    <Content Include="app_3\src\components\BreedList.js" />
+    <Content Include="app_3\src\index.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -102,6 +114,11 @@
     <Content Include="app_1\public\manifest.json" />
     <Content Include="app_1\README.md" />
     <Content Include="app_2\public\manifest.json" />
+    <Content Include="app_3\.gitignore" />
+    <Content Include="app_3\package-lock.json" />
+    <Content Include="app_3\package.json" />
+    <Content Include="app_3\public\manifest.json" />
+    <Content Include="app_3\README.md" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\React.pubxml" />
     <None Include="Web.Debug.config">
@@ -114,6 +131,7 @@
   <ItemGroup>
     <Folder Include="app_1\build\" />
     <Folder Include="app_2\build\" />
+    <Folder Include="app_3\build\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
