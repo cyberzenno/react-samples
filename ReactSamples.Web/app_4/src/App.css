@@ -1,5 +1,6 @@
 @import url("https://webdesignsurface.com/Areas/Surface/assets/bootstrap/css/bootstrap.min.css");
 @import url("https://webdesignsurface.com/_data/9112/17058/18064.css");
+@import url("https://webdesignsurface.com/_data/9112/17058/20051.css");
 
 body {
     background-color: #555;
@@ -9,4 +10,12 @@ body {
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
 }

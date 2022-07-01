@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+*.bsdesign
+ReactSamples.Design/Design Export/assets/bootstrap/
+ReactSamples.Design/Design Export/assets/fonts/
+ReactSamples.Web/app_5/public/assets/fonts/
+ReactSamples.Web/app_5/public/assets/bootstrap/
+ReactSamples.ScriptsAndData/

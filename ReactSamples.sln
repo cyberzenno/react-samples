@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactSamples.Web", "ReactSamples.Web\ReactSamples.Web.csproj", "{CB0DB4CE-B5D9-45F6-B500-008B4939C4EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactSamples.Api", "ReactSamples.Api\ReactSamples.Api.csproj", "{81D86794-8370-4D44-A713-9A8DB483CE5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CB0DB4CE-B5D9-45F6-B500-008B4939C4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB0DB4CE-B5D9-45F6-B500-008B4939C4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB0DB4CE-B5D9-45F6-B500-008B4939C4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D86794-8370-4D44-A713-9A8DB483CE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D86794-8370-4D44-A713-9A8DB483CE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D86794-8370-4D44-A713-9A8DB483CE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D86794-8370-4D44-A713-9A8DB483CE5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

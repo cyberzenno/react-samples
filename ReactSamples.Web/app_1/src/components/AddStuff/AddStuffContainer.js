@@ -22,7 +22,13 @@ function AddStuffContainer(props) {
 			color: newColor
 		};
 
-		props.setItems(x => [...x, newItem]);
+		props.setItems(x => {
+			var updatedItems = [...x, newItem];
+
+			localStorage.setItem("savedItems", JSON.stringify(updatedItems));
+
+			return updatedItems;
+		});
 
 		//despite is heavily 'suggested' not to manipulate directly the DOM,
 		//in case of local reset of values only, is 'tolerated' to do so
@@ -54,7 +60,7 @@ function AddStuffContainer(props) {
 			<input className="ac_18064_4463 pos_18064_9864" type="text" ref={imageUrlRef} />
 		</div>
 
-		{showColorSelector ? <ColorSelector newColor={newColor} setNewColor={setNewColor} setShowColorSelector={setShowColorSelector}/> : <div></div>}
+		{showColorSelector ? <ColorSelector newColor={newColor} setNewColor={setNewColor} setShowColorSelector={setShowColorSelector} /> : <div></div>}
 
 		<div className="ac_18064_3774 pos_18064_9155" onClick={x => setShowColorSelector(!showColorSelector)}>
 			<div className="ac_18064_5865 pos_18064_9158">Color</div>

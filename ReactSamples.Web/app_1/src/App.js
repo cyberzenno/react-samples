@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import './App.css';
 import AddStuffContainer from './components/AddStuff/AddStuffContainer';
@@ -19,12 +19,33 @@ function App() {
     const [items, setItems] = useState(initialItemList);
     const [selectedItem, setSelectedItem] = useState(items[0]);
 
+
+    useEffect(() => {
+
+        var savedItemsString = localStorage.getItem("savedItems");
+        if (savedItemsString) {
+
+            var savedItems = JSON.parse(savedItemsString);
+            setItems(savedItems);
+
+        } else {
+            console.log("no savedItems")
+        }
+
+    }, []);
+
+
     return <div>
         <AddStuffContainer setItems={setItems} />
-        <SeeTheListContainer items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem}/>
-        <SeeTheDetailsContainer item={selectedItem}/>
+        <SeeTheListContainer items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
+        <SeeTheDetailsContainer item={selectedItem} />
 
-        <a href="https://webdesignsurface.com/surface/view/18064/react-course_react-app---add-stuff" target="_blank" rel="noreferrer" className="ac_18064_7722 pos_18064_0936">Edit UI</a>
+        <div className="pos_18064_8401">
+            <a href="https://react.cyberzenno.com/" target="_blank" className="ac_18064_7722  pos_18064_3645" rel="noreferrer" >React Samples</a>
+            <a href="https://webdesignsurface.com/surface/view/18064/react-samples" className="ac_18064_7722 pos_18064_0936" target="_blank" rel="noreferrer" >Edit App UI</a>
+            <a href="https://github.com/cyberzenno/react-samples/blob/main/ReactSamples.Web/app_1/src/App.js" className="ac_18064_7722 pos_18064_9809" target="_blank" rel="noreferrer" >Source Code on GitHub</a>
+        </div>
+
     </div>;
 }
 

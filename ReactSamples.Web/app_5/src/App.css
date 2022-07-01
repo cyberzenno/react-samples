@@ -1,0 +1,24 @@
+
+body {
+    background-color: #555;
+    color: #fff;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+.active {
+
+    font-weight: bold;
+
+}
