@@ -8,9 +8,9 @@ import { AuthContextProvider } from './store/AuthContext';
 const liveBaseName = "/app_5/build";
 const localBaseName = "";
 
-const baseName = liveBaseName;
+const baseName = localBaseName;
 
-const environment = "Live";//Live or Local - this will select which API to use
+const environment = "Local";//Live or Local - this will select which API to use
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

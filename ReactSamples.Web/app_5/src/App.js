@@ -12,6 +12,7 @@ import DashboardPage from "./pages/DashboardPage";
 import NotFound from "./pages/NotFound";
 import ProfilePage from "./pages/ProfilePage";
 import UsersPage from "./pages/UsersPage";
+import YourToDosPage from "./pages/YourToDosPage";
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path='/profile'>
             <ProfilePage />
+        </Route>
+        <Route path='/todos'>
+            <YourToDosPage/>
         </Route>
         <Route path='/users'>
             <UsersPage />

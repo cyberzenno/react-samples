@@ -85,7 +85,12 @@ export const useApiUrls = function (environment) {
         environment,
         loginUrl: host + "/api/account/login",
         registerUrl: host + "/api/account/register",
-        loadUsersUrl: host + "/api/account/users"
+        loadUsersUrl: host + "/api/account/users",
+
+        loadTodosUrl: host + "/api/custom-content/todos",
+        addTodoUrl: host + "/api/custom-content/add-todo",
+        changeTodoStateUrl: host + "/api/custom-content/change-todo-state",
+        deleteTodoUrl: host + "/api/custom-content/delete-todo",
     };
 }
 

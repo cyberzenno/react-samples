@@ -132,7 +132,6 @@
     <Content Include="app_5\public\assets\img\avatars\avatar5.jpeg" />
     <Content Include="app_5\public\assets\img\dogs\image2.jpeg" />
     <Content Include="app_5\public\assets\img\dogs\image3.jpeg" />
-    <Content Include="app_5\public\assets\js\theme.js" />
     <Content Include="app_5\public\favicon.ico" />
     <Content Include="app_5\public\index.html" />
     <Content Include="app_5\public\logo192.png" />
@@ -151,6 +150,7 @@
     <Content Include="app_5\src\pages\ProfilePage.js" />
     <Content Include="app_5\src\index.js" />
     <Content Include="app_5\src\pages\UsersPage.js" />
+    <Content Include="app_5\src\pages\YourToDosPage.js" />
     <Content Include="app_5\src\store\AuthContext.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />

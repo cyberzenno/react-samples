@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ReactSamples.Api.Data;
+using ReactSamples.Api.Data.CustomContent;
 using ReactSamples.Api.Data.DataModels;
 using ReactSamples.Api.Data.DataModels.Identity;
 using ReactSamples.Api.Data.Identity;
@@ -40,6 +41,7 @@ namespace ReactSamples.Api
 
             // For Entity Framework            
             services.AddDbContext<ApplicationIdentityDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Database")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Database")));
 
             // For Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
