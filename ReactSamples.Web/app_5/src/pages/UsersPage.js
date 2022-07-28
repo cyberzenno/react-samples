@@ -1,6 +1,7 @@
 ﻿import { useEffect, useState, useContext } from 'react'
 import Layout from '../layout/Layout';
-import AuthContext, { useApiUrls } from "../store/AuthContext";
+import AuthContext from "../store/AuthContext";
+import { useApiUrls } from "../hooks/useApisUrl";
 
 function UsersPage() {
 

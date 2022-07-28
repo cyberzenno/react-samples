@@ -139,6 +139,7 @@
     <Content Include="app_5\public\robots.txt" />
     <Content Include="app_5\src\App.css" />
     <Content Include="app_5\src\App.js" />
+    <Content Include="app_5\src\hooks\useApisUrl.js" />
     <Content Include="app_5\src\layout\Layout.js" />
     <Content Include="app_5\src\pages\Register.js" />
     <Content Include="app_5\src\pages\Login.js" />
@@ -197,6 +198,7 @@
     <Content Include="app_5\public\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="app_5\public\assets\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\react.cyberzenno.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\react.cyberzenno.pubxml" />
     <None Include="Properties\PublishProfiles\React.pubxml" />
     <None Include="Web.Debug.config">

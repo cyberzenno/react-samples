@@ -1,6 +1,7 @@
 ﻿import { useEffect, useState, useContext, useRef } from 'react'
 import Layout from '../layout/Layout';
-import AuthContext, { useApiUrls } from "../store/AuthContext";
+import AuthContext from "../store/AuthContext";
+import { useApiUrls } from "../hooks/useApisUrl";
 
 function YourToDosPage() {
 
@@ -50,6 +51,11 @@ function YourToDosPage() {
             });
 
 
+    }
+    function onEnterButtonHandler(event) {
+        if (event.key === 'Enter') {
+            addTodoHandler();
+        }
     }
 
     function changeTodoStateHandler(event) {
@@ -124,7 +130,7 @@ function YourToDosPage() {
 
     //task filter
     function filterTasksHandler(event) {
-        
+
         var taskFilter = event.currentTarget.innerText.trim();
 
         var filteredTodos = filterTodos(taskFilter, allTodos);
@@ -179,7 +185,7 @@ function YourToDosPage() {
                 <div className="col">
                     <label className="form-label">New task</label>
                     <div className="input-group">
-                        <input className="form-control" type="text" ref={todoTitleRef} />
+                        <input className="form-control" type="text" ref={todoTitleRef} onKeyPress={onEnterButtonHandler} />
                         <button className="btn btn-primary" type="button" onClick={addTodoHandler}>
                             Add New Task
                         </button>

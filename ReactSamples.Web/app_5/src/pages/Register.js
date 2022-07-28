@@ -1,7 +1,8 @@
 ﻿import { useRef, useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import LayoutRegisterLogin from '../layout/LayoutRegisterLogin';
-import AuthContext, { useApiUrls } from "../store/AuthContext";
+import AuthContext from "../store/AuthContext";
+import { useApiUrls } from "../hooks/useApisUrl";
 
 
 function Register() {
