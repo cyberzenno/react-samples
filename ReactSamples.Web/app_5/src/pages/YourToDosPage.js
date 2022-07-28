@@ -13,6 +13,17 @@ function YourToDosPage() {
     const [allTodos, setAllTodos] = useState([]);
     const [currentFilter, setCurrentFilter] = useState("All");
 
+    //this means: 
+    //when currentFilter OR allTodos change,
+    //then do "this":
+    useEffect(() => {
+
+        var filtered = filterTodos(currentFilter, allTodos);
+
+        setTodos(x => filtered);
+
+    }, [currentFilter, allTodos])
+
 
     //task CRUD
     var todoTitleRef = useRef();
@@ -38,7 +49,6 @@ function YourToDosPage() {
                     var data = await response.json();
 
                     setAllTodos(x => data);
-                    setTodos(x => filterTodos(currentFilter, data));
 
                     todoTitleRef.current.value = "";
 
@@ -80,7 +90,6 @@ function YourToDosPage() {
                     var data = await response.json();
 
                     setAllTodos(x => data);
-                    setTodos(x => filterTodos(currentFilter, data));
 
                     todoTitleRef.current.value = "";
 
@@ -115,7 +124,6 @@ function YourToDosPage() {
                     var data = await response.json();
 
                     setAllTodos(x => data);
-                    setTodos(x => filterTodos(currentFilter, data));
 
                     todoTitleRef.current.value = "";
 
@@ -132,10 +140,6 @@ function YourToDosPage() {
     function filterTasksHandler(event) {
 
         var taskFilter = event.currentTarget.innerText.trim();
-
-        var filteredTodos = filterTodos(taskFilter, allTodos);
-
-        setTodos(x => filteredTodos);
 
         setCurrentFilter(x => taskFilter);
     }
@@ -164,8 +168,6 @@ function YourToDosPage() {
                 }
             })
             .then(data => {
-
-                setTodos(x => data);
                 setAllTodos(x => data);
             })
             .catch((error) => {
