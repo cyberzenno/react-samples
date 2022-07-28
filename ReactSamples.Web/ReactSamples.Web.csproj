@@ -132,7 +132,6 @@
     <Content Include="app_5\public\assets\img\avatars\avatar5.jpeg" />
     <Content Include="app_5\public\assets\img\dogs\image2.jpeg" />
     <Content Include="app_5\public\assets\img\dogs\image3.jpeg" />
-    <Content Include="app_5\public\assets\js\theme.js" />
     <Content Include="app_5\public\favicon.ico" />
     <Content Include="app_5\public\index.html" />
     <Content Include="app_5\public\logo192.png" />
@@ -140,6 +139,7 @@
     <Content Include="app_5\public\robots.txt" />
     <Content Include="app_5\src\App.css" />
     <Content Include="app_5\src\App.js" />
+    <Content Include="app_5\src\hooks\useApisUrl.js" />
     <Content Include="app_5\src\layout\Layout.js" />
     <Content Include="app_5\src\pages\Register.js" />
     <Content Include="app_5\src\pages\Login.js" />
@@ -151,6 +151,7 @@
     <Content Include="app_5\src\pages\ProfilePage.js" />
     <Content Include="app_5\src\index.js" />
     <Content Include="app_5\src\pages\UsersPage.js" />
+    <Content Include="app_5\src\pages\YourToDosPage.js" />
     <Content Include="app_5\src\store\AuthContext.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
@@ -197,6 +198,7 @@
     <Content Include="app_5\public\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="app_5\public\assets\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\react.cyberzenno.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\react.cyberzenno.pubxml" />
     <None Include="Properties\PublishProfiles\React.pubxml" />
     <None Include="Web.Debug.config">

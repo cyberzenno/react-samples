@@ -56,6 +56,12 @@ function SideNav() {
                         <span>Profile</span>
                     </NavLink>
                 </li>
+                <li className="nav-item">
+                    <NavLink to="/todos" className="nav-link">
+                        <i className="fa fa-list-alt"></i>
+                        <span>Your To-do List</span>
+                    </NavLink>
+                </li>
 
                 {currentUserIsAdmin ? adminOnlyContent() : ""}
 
