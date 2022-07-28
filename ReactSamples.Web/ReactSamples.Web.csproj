@@ -139,6 +139,8 @@
     <Content Include="app_5\public\robots.txt" />
     <Content Include="app_5\src\App.css" />
     <Content Include="app_5\src\App.js" />
+    <Content Include="app_5\src\components\Counter.css" />
+    <Content Include="app_5\src\components\Counter.js" />
     <Content Include="app_5\src\hooks\useApisUrl.js" />
     <Content Include="app_5\src\layout\Layout.js" />
     <Content Include="app_5\src\pages\Register.js" />
@@ -151,8 +153,11 @@
     <Content Include="app_5\src\pages\ProfilePage.js" />
     <Content Include="app_5\src\index.js" />
     <Content Include="app_5\src\pages\UsersPage.js" />
+    <Content Include="app_5\src\pages\UsingReduxCounterPage.js" />
     <Content Include="app_5\src\pages\YourToDosPage.js" />
     <Content Include="app_5\src\store\AuthContext.js" />
+    <Content Include="app_5\src\store\ReduxCounter.js" />
+    <Content Include="app_5\src\_temp\redux-demo.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>

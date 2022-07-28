@@ -14,6 +14,11 @@ import ProfilePage from "./pages/ProfilePage";
 import UsersPage from "./pages/UsersPage";
 import YourToDosPage from "./pages/YourToDosPage";
 
+import { Provider } from 'react-redux'
+import store from './store/ReduxCounter'
+
+import UsingReduxCounterPage from "./pages/UsingReduxCounterPage";
+
 function App() {
 
 
@@ -35,10 +40,18 @@ function App() {
             <ProfilePage />
         </Route>
         <Route path='/todos'>
-            <YourToDosPage/>
+            <YourToDosPage />
         </Route>
         <Route path='/users'>
             <UsersPage />
+        </Route>
+
+        <Route path='/counter'>
+
+            <Provider store={store}>
+                <UsingReduxCounterPage />
+            </Provider>
+
         </Route>
 
         <Route path="/">
