@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ReactSamples.Api.Data.DataModels;
-using ReactSamples.Api.Data.DataModels.CustomContent;
 using ReactSamples.Api.Data.DataModels.Identity;
 
 namespace ReactSamples.Api.Data.Identity
@@ -18,7 +17,6 @@ namespace ReactSamples.Api.Data.Identity
             base.OnModelCreating(builder);
 
             builder.Entity<ApplicationUser>().ToTable("aut_Users");
-
             builder.Entity<IdentityUserRole<string>>().ToTable("aut_UserRoles");
             builder.Entity<IdentityUserClaim<string>>().ToTable("aut_UserClaims");
             builder.Entity<IdentityUserLogin<string>>().ToTable("aut_UserLogins");
@@ -27,8 +25,6 @@ namespace ReactSamples.Api.Data.Identity
             builder.Entity<IdentityRole>().ToTable("aut_Roles");
             builder.Entity<IdentityRoleClaim<string>>().ToTable("aut_RoleClaims");
 
-
-            //builder.Entity<ToDo>().ToTable("tod_Todos");
         }
     }
 }
