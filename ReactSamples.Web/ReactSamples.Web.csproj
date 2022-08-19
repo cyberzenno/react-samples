@@ -159,14 +159,15 @@
     <Content Include="app_5\src\store\AuthContext.js" />
     <Content Include="app_5\src\store\ReduxCounter.js" />
     <Content Include="app_5\src\_temp\redux-demo.js" />
-    <Content Include="app_6_ts\public\favicon.ico" />
-    <Content Include="app_6_ts\public\index.html" />
-    <Content Include="app_6_ts\public\robots.txt" />
-    <Content Include="app_6_ts\src\App.css" />
-    <Content Include="app_6_ts_only\basics.js" />
-    <Content Include="app_6_ts_only\index.html" />
-    <Content Include="app_6_ts_only\no-typescript.js" />
-    <Content Include="app_6_ts_only\with-typescript.js" />
+    <Content Include="app_6_0_ts_only\basics.js" />
+    <Content Include="app_6_0_ts_only\index.html" />
+    <Content Include="app_6_0_ts_only\no-typescript.js" />
+    <Content Include="app_6_0_ts_only\with-typescript.js" />
+    <Content Include="app_6_1_ts\.gitignore" />
+    <Content Include="app_6_1_ts\public\favicon.ico" />
+    <Content Include="app_6_1_ts\public\index.html" />
+    <Content Include="app_6_1_ts\public\robots.txt" />
+    <Content Include="app_6_1_ts\src\App.css" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -211,14 +212,13 @@
     <Content Include="app_5\public\assets\fonts\fontawesome-webfont.woff" />
     <Content Include="app_5\public\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="app_5\public\assets\fonts\FontAwesome.otf" />
-    <Content Include="app_6_ts_only\package-lock.json" />
-    <Content Include="app_6_ts_only\package.json" />
-    <Content Include="app_6_ts\.gitignore" />
-    <Content Include="app_6_ts\package-lock.json" />
-    <Content Include="app_6_ts\package.json" />
-    <Content Include="app_6_ts\public\manifest.json" />
-    <Content Include="app_6_ts\README.md" />
-    <Content Include="app_6_ts\tsconfig.json" />
+    <Content Include="app_6_0_ts_only\package-lock.json" />
+    <Content Include="app_6_0_ts_only\package.json" />
+    <Content Include="app_6_1_ts\package-lock.json" />
+    <Content Include="app_6_1_ts\package.json" />
+    <Content Include="app_6_1_ts\public\manifest.json" />
+    <Content Include="app_6_1_ts\README.md" />
+    <Content Include="app_6_1_ts\tsconfig.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\react.cyberzenno.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\react.cyberzenno.pubxml" />
@@ -241,14 +241,15 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app_6_ts\src\App.tsx" />
-    <TypeScriptCompile Include="app_6_ts\src\components\TodoItem.tsx" />
-    <TypeScriptCompile Include="app_6_ts\src\components\Todos.tsx" />
-    <TypeScriptCompile Include="app_6_ts\src\index.tsx" />
-    <TypeScriptCompile Include="app_6_ts\src\models\TodoModel.tsx" />
-    <TypeScriptCompile Include="app_6_ts\src\react-app-env.d.ts" />
-    <TypeScriptCompile Include="app_6_ts_only\basics.ts" />
-    <TypeScriptCompile Include="app_6_ts_only\with-typescript.ts" />
+    <TypeScriptCompile Include="app_6_0_ts_only\basics.ts" />
+    <TypeScriptCompile Include="app_6_0_ts_only\with-typescript.ts" />
+    <TypeScriptCompile Include="app_6_1_ts\src\App.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\components\NewTodo.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\components\TodoItem.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\components\Todos.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\index.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\models\todoModel.tsx" />
+    <TypeScriptCompile Include="app_6_1_ts\src\react-app-env.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
