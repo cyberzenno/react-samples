@@ -1,6 +1,7 @@
 ﻿class TodoModel {
     id: string;
     text: string;
+    hello: string;
 
     constructor(textTodo: string) {
         this.text = textTodo;
